@@ -1,0 +1,125 @@
+@font-face {
+	font-family: "Norse";
+	src: url(/fonts/Norse-Bold.otf);
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	display: flex;
+	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+aside {
+	display: flex;
+	flex-direction: column;
+	width: 35vw;
+	background: no-repeat center center url(/src/cowsbg.jpg);
+	background-size: cover;
+	justify-content: space-between;
+	align-items: center;
+}
+aside > div:first-of-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 6rem;
+	font-family: Norse;
+	margin-top: 10rem;
+	background: rgba(0, 0, 0, 0.6);
+	height: 10rem;
+	width: 100%;
+}
+aside > div:first-of-type > img {
+	width: auto;
+	height: 120px;
+}
+#bgcredit {
+	color: gainsboro;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+#bgcredit > a:link {
+	color: gainsboro;
+}
+#bgcredit > a:visited {
+	color: rgb(107, 75, 107);
+}
+#bgcredit > a:hover {
+	color: rgb(169, 109, 169);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 65vw;
+	height: 100%;
+	background-color: blanchedalmond;
+}
+main > div {
+	width: 100%;
+}
+main > div > div {
+	margin: 3%;
+}
+
+/* First division */
+
+main > div:nth-child(1) {
+	height: 30%;
+
+	background-color: rgb(224, 184, 184);
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+main > div:nth-child(1) > div > p {
+	background-color: rgb(227, 233, 177);
+	max-width: 900px;
+}
+
+/* Second division */
+
+main > div:nth-child(2) {
+	display: flex;
+	height: 40%;
+	position: relative;
+	z-index: 10;
+	background-color: #f2f2f2;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+form {
+	display: flex;
+	flex-direction: row;
+	background-color: aquamarine;
+
+	height: 90%;
+	width: 700px;
+	gap: 2rem;
+}
+form > div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+form > div > div {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Third division */
+
+main > div:nth-child(3) {
+	height: 30%;
+	background-color: rgb(196, 225, 201);
+}
+
+@media only screen and (max-width: 1000px) {
+	main {
+		color: white;
+	}
+}
