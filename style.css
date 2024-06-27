@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Norse";
-	src: url(/fonts/NorseBold.otf);
+	src: url(./fonts/NorseBold.otf);
 }
 * {
 	padding: 0;
@@ -16,7 +16,7 @@ aside {
 	display: flex;
 	flex-direction: column;
 	width: 35vw;
-	background: no-repeat center center url(/src/cowsbg.jpg);
+	background: no-repeat center center url(./src/cowsbg.jpg);
 	background-size: cover;
 	justify-content: space-between;
 	align-items: center;
