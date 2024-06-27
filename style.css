@@ -42,13 +42,13 @@ aside > div:first-of-type > img {
 	margin-bottom: 2rem;
 	text-align: center;
 }
-#bgcredit > a:link {
+a:link {
 	color: gainsboro;
 }
-#bgcredit > a:visited {
+a:visited {
 	color: rgb(107, 75, 107);
 }
-#bgcredit > a:hover {
+a:hover {
 	color: rgb(169, 109, 169);
 }
 
@@ -58,7 +58,6 @@ main {
 	align-items: center;
 	width: 65vw;
 	height: 100%;
-	background-color: blanchedalmond;
 }
 main > div {
 	width: 100%;
@@ -70,54 +69,108 @@ main > div > div {
 /* First division */
 
 main > div:nth-child(1) {
-	height: 30%;
-
-	background-color: rgb(224, 184, 184);
+	height: 35%;
+	background-color: rgb(219, 229, 230);
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
 }
+main > div:nth-child(1) > div {
+	display: flex;
+	flex-direction: column;
+	font-size: larger;
+	gap: 1rem;
+}
 main > div:nth-child(1) > div > p {
-	background-color: rgb(227, 233, 177);
 	max-width: 900px;
+	color: rgb(53, 53, 53);
+	font-weight: bold;
 }
 
 /* Second division */
 
 main > div:nth-child(2) {
 	display: flex;
-	height: 40%;
+	height: 30%;
 	position: relative;
 	z-index: 10;
-	background-color: #f2f2f2;
-	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	background-color: #f4f4f4;
+	box-shadow: 5px 5px 5px rgb(115, 118, 118);
+}
+legend {
+	font-weight: bold;
+	color: rgb(69, 69, 69);
 }
 form {
 	display: flex;
 	flex-direction: row;
-	background-color: aquamarine;
-
 	height: 90%;
 	width: 700px;
-	gap: 2rem;
+	gap: 3rem;
+	margin-top: 16px;
 }
 form > div {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 20px;
 }
 form > div > div {
 	display: flex;
 	flex-direction: column;
 }
+form > div > div > label {
+	font-size: smaller;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: rgb(69, 69, 69);
+}
+form > div > div > input {
+	color: rgb(69, 69, 69);
+	width: 200px;
+	border-radius: 5px;
+	height: 24px;
+	padding-left: 4px;
+	border: 1px solid darkgrey;
+}
+
+form > div > div > input:focus {
+	border-color: rgb(44, 44, 228);
+	box-shadow: 5px 5px 5px gray;
+}
+
+form > div > div > input:invalid {
+	border: solid 2px red;
+	border-color: red;
+}
 
 /* Third division */
 
 main > div:nth-child(3) {
-	height: 30%;
-	background-color: rgb(196, 225, 201);
+	height: 35%;
+	background-color: rgb(219, 229, 230);
 }
 
+main > div:nth-child(3) > div > input {
+	background-color: rgb(72, 146, 79);
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: #f2f2f2;
+	padding: 15px 50px 15px 50px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 2px 2px 2px rgb(162, 162, 162);
+	margin-bottom: 24px;
+}
+main > div:nth-child(3) > div > input:hover {
+	background-color: rgb(52, 116, 59);
+}
+main > div:nth-child(3) > div > input:active {
+	background: rgb(52, 116, 59);
+	-webkit-box-shadow: inset 0px 0px 5px #123c1e;
+	-moz-box-shadow: inset 0px 0px 5px #123c1e;
+	box-shadow: inset 0px 0px 5px #123c1e;
+	outline: none;
+}
 @media only screen and (max-width: 1000px) {
 	main {
 		color: white;

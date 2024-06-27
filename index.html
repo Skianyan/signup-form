@@ -27,48 +27,53 @@
 			<div>
 				<div>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-						non nobis sint culpa deleniti. Facilis, quidem accusamus autem ipsum
-						repellat aliquid nesciunt at animi vel rem itaque molestias,
-						delectus possimus?
+						This is some test text for a made up service you should really sign
+						up for, clearly it's not a scam of any sort because the page is
+						rather pretty, or at least some effort was put into making it
+						wouldn't you <em>agree?</em>
 					</p>
-					<p>Lorem ipsum dolor sit</p>
+					<p>It's <em>futile</em> to resist</p>
 				</div>
 			</div>
 			<div>
 				<div>
-					<legend>Sign Up!</legend>
-					<form action="">
+					<legend>Sign Up! (please)</legend>
+					<form id="signup" action="">
 						<div>
 							<div>
-								<label for="firstname">firstname</label>
+								<label for="firstname">First name</label>
 								<input id="firstname" type="text" />
 							</div>
+
 							<div>
-								<label for="lastname">lastname</label>
-								<input id="lastname" type="text" />
+								<label for="email">Email</label>
+								<input id="email" type="email" />
 							</div>
 							<div>
-								<label for="email">email</label>
-								<input id="email" type="email" />
+								<label for="password">Password</label>
+								<input
+									id="password"
+									type="password"
+									pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+								/>
 							</div>
 						</div>
 						<div>
 							<div>
-								<label for="phonenumber">phonenumber</label>
-								<input id="phonenumber" type="text" />
+								<label for="lastname">Last name</label>
+								<input id="lastname" type="text" />
 							</div>
 							<div>
-								<label for="password">password</label>
+								<label for="phonenumber">Phone number</label>
 								<input
-									id="password"
+									id="phonenumber"
 									type="text"
 									placeholder="(+52) 662 111 11 11"
 								/>
 							</div>
 							<div>
-								<label for="confirmpass">confirmpass</label>
-								<input id="confirmpass" type="text" />
+								<label for="confirmpass">Confirm password</label>
+								<input id="confirmpass" type="password" />
 							</div>
 						</div>
 					</form>
@@ -76,7 +81,7 @@
 			</div>
 			<div>
 				<div>
-					<button>Create Account</button>
+					<input type="submit" form="signup" value="Create Account" />
 					<p>Already have an account? <a href="#">Log in</a></p>
 				</div>
 			</div>
